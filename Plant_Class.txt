@@ -1,0 +1,19 @@
+class Plant {
+	private temperature[]
+	private humidity[]
+	private soilMoisture[]
+	private idealTemperature
+	private idealHumidity
+	private idealSoilMoisture
+	private avgTemperature
+	private avgHumidity
+	private avgSoilMoisture
+
+
+	public Plant() { Initialize all values to zero, get ideal values from server }
+
+	public readData() { Get data from sensors and poluate into arrays. Then calcuate the new average for each value }
+
+	public pushData() { Send data to server }
+
+}
