@@ -27,7 +27,7 @@ class Plant:
 		with open(self.__filename, 'a', newline='') as csvfile:
 			csvwriter = csv.writer(csvfile)
 			csvwriter.writerow([self.__airTemp, self.__airHumidity, self.__soilTemp, self.__soilMoisture, self.__ambientLight,
-				time.strftime("%d/%m/%Y"), time.hour * 3600 + time.minute + time.second]) 
+				time.strftime("%d/%m/%Y"), time.hour * 60 * 60 + time.minute * 60 + time.second]) 
 
 	def __writeCSVHeaders(self): # write csv headers
 		with open(self.__filename, 'w', newline='') as csvfile:
